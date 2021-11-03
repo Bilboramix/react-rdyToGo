@@ -1,0 +1,167 @@
+/* Other rules */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 190px;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+header span {
+  margin-left: 56px;
+  font-size: 48px;
+}
+
+header i {
+  color: #5c48d3;
+  font-size: 56px;
+  margin-left: 123px;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+section button {
+  height: 70px;
+  width: 120px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+}
+
+section button:last-child {
+  margin-left: 70px;
+}
+
+.on {
+  background-color: #5c48d3;
+  color: #fff;
+}
+
+.off {
+  background-color: #fff;
+}
+
+.gate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 445px;
+  width: 250px;
+  height: 145px;
+  color: white;
+  font-size: 48px;
+  border-radius: 15px;
+}
+
+.gate-closed {
+  background-color: #d34848;
+}
+
+.gate-open {
+  background-color: #46ac4a;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  background-color: rgb(211, 211, 211);
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+strong {
+  font-weight: bold;
+}
+
+/* Media querries */
+
+@media (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+  header span {
+    margin-left: 56px;
+    font-size: 33px;
+  }
+
+  header i {
+    color: #5c48d3;
+    font-size: 31px;
+    margin-left: 50px;
+  }
+
+  .gate {
+    margin-left: 40px;
+    width: 160px;
+    height: 70px;
+    font-size: 30px;
+  }
+  section button {
+    height: 55px;
+    width: 90px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .off {
+    margin-left: 40px;
+  }
+  footer {
+    font-size: 15px;
+  }
+  section {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Rules */
+  header {
+    height: 80px;
+  }
+  header span {
+    margin-left: 56px;
+    font-size: 43px;
+  }
+
+  header i {
+    color: #5c48d3;
+    font-size: 41px;
+    margin-left: 100px;
+  }
+
+  .gate {
+    margin-left: 160px;
+  }
+  section {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* Rules */
+  header {
+    height: 130px;
+  }
+
+  .gate {
+    margin-left: 245px;
+  }
+}
